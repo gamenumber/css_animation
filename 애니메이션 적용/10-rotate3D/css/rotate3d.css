@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate3D 5s linear infinite;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate3D {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
