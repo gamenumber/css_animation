@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(20deg);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+.skew-element {
+    animation: skew 2s ease-in-out infinite;
+    width: 150px;
+    height: 100px;
+    background-color: #e67e22; /* 주황색 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+}
