@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.slide-element {
+    animation: slide 2s linear infinite;
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733; /* 주황색 배경색 */
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+}
