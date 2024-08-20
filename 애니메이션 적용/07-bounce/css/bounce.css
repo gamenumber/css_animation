@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce-element {
+    animation: bounce 2s infinite;
+    width: 100px;
+    height: 100px;
+    background-color: #8e44ad; /* 보라색 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+}
