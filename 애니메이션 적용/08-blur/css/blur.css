@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+.blur-element {
+    animation: blur 2s infinite;
+    width: 200px;
+    height: 100px;
+    background-color: #1abc9c; /* 청록색 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+}
