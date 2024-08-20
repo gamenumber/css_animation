@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-element {
+    animation: rotate 4s linear infinite;
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12; /* 주황색 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 50px auto;
+}
