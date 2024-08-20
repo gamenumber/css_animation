@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+   /* 무지개 텍스트 효과 */
+   @keyframes rainbow {
+    0% {
+        color: red;
+    }
+    14% {
+        color: orange;
+    }
+    28% {
+        color: yellow;
+    }
+    42% {
+        color: green;
+    }
+    57% {
+        color: blue;
+    }
+    71% {
+        color: indigo;
+    }
+    85% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.rainbow-text {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    animation: rainbow 5s linear infinite;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+}

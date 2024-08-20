@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 흔들리는 종 효과 */
+@keyframes bell {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(30deg);
+    }
+    20% {
+        transform: rotate(-28deg);
+    }
+    30% {
+        transform: rotate(25deg);
+    }
+    40% {
+        transform: rotate(-22deg);
+    }
+    50% {
+        transform: rotate(18deg);
+    }
+    60% {
+        transform: rotate(-15deg);
+    }
+    70% {
+        transform: rotate(12deg);
+    }
+    80% {
+        transform: rotate(-8deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.bell-element {
+    display: inline-block;
+    font-size: 50px;
+    color: #FF6347;
+    animation: bell 2s ease-in-out infinite;
+    transform-origin: top center; /* 회전축을 요소의 상단 중앙으로 설정 */
+}
