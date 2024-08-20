@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-element {
+    animation: fadeInOut 3s infinite;
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50; /* 녹색 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+}
