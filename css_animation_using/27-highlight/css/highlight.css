@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 텍스트 강조 효과 */
+@keyframes highlight {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.highlight-text {
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, yellow 50%, transparent 50%);
+    background-size: 200% 100%;
+    animation: highlight 1s forwards;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}

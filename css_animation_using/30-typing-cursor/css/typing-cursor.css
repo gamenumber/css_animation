@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 타이핑 커서 효과 */
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.typing-text {
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+}
+
+.typing-cursor::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+    font-weight: bold;
+    margin-left: 2px;
+}
