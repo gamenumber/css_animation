@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 반짝이는 효과 */
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.sparkle-element {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    color: #ffd700; /* 골드 색상 */
+    text-align: center;
+    margin-top: 100px;
+    animation: sparkle 0.6s linear infinite;
+}
