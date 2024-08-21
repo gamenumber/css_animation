@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 플립 효과 */
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+
+.flip-element {
+    width: 150px;
+    height: 150px;
+    margin: 100px auto;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    animation: flip 2s linear infinite;
+}

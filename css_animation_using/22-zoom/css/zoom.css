@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* 줌 효과 */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom-element {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #ff5722;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    animation: zoom 2s ease-in-out infinite;
+}
