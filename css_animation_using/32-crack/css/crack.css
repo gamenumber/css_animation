@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@keyframes crack {
+    0% {
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+.crack-element {
+    animation: crack 0.5s ease-out forwards;
+}
