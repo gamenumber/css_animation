@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* 젤리 효과 */
+@keyframes jelly {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
+.jelly-element {
+    font-size: 48px;
+    font-family: "Arial", sans-serif;
+    color: #3498db;
+    text-align: center;
+    margin-top: 100px;
+    display: inline-block;
+    cursor: pointer;
+    animation: jelly 0.9s both;
+}

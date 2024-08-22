@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 종이 접기 효과 */
+@keyframes fold {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+.fold-element {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: top;
+    animation: fold 1s ease-in-out forwards;
+    margin: 100px auto;
+    cursor: pointer;
+}

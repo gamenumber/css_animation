@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 물결 텍스트 효과 */
+@keyframes wave2 {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    75% {
+        transform: translateY(15px);
+    }
+}
+
+.wave-text {
+    display: inline-block;
+    font-size: 48px;
+    font-family: "Arial", sans-serif;
+    white-space: nowrap;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave2 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave-text span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave-text span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+/* 필요에 따라 추가적인 nth-child 스타일링 */

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 마법 지팡이 효과 */
+@keyframes magicWand {
+    0% {
+        transform: rotate(-15deg) translateY(0px);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(15deg) translateY(-30px);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-15deg) translateY(-60px);
+        opacity: 0;
+    }
+}
+
+.magic-wand-container {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    color: #000;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.magic-wand-container .magic-wand::before {
+    content: "✨";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: magicWand 1s ease-in-out infinite;
+}

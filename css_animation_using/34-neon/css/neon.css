@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* 네온 사인 효과 */
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff00de,
+            0 0 7px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 15px #ff00de;
+    }
+    50% {
+        text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 1.5px #fff,
+            0 0 2px #ff00de, 0 0 3.5px #ff00de, 0 0 4px #ff00de, 0 0 5px #ff00de,
+            0 0 7.5px #ff00de;
+    }
+}
+
+.neon-text {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin-top: 100px;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}

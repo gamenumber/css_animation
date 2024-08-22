@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 글리치 텍스트 효과 */
+@keyframes glitchText {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(-5px, -5px);
+    }
+    60% {
+        transform: translate(5px, 5px);
+    }
+    80% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.glitch-text {
+    font-size: 48px;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    position: relative;
+    animation: glitchText 0.5s infinite;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 1.2;
+    background: #000;
+    padding: 20px;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitchText 1s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitchText 1.2s infinite linear alternate-reverse;
+}

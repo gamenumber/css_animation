@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* 모자이크 효과 */
+@keyframes mosaic {
+    0% {
+        filter: blur(0);
+    }
+    50% {
+        filter: blur(15px);
+    }
+    100% {
+        filter: blur(0);
+    }
+}
+
+.mosaic-element {
+    width: 300px;
+    height: 200px;
+    background-image: url("https://via.placeholder.com/300x200");
+    background-size: cover;
+    animation: mosaic 2s ease-in-out infinite;
+    margin: 100px auto;
+    border: 5px solid #3498db;
+}
